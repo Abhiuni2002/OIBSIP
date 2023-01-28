@@ -1,0 +1,125 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+html{
+  height: 100%;
+  overflow-x: hidden;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  border-bottom: 0.5px solid #ffffff60;
+  width: 100%;
+  padding: 10px 0 0 0 ;
+  top: 0;
+  z-index: 100;
+  line-height: 50px;
+}
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 80px;
+}
+.navbar .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo i{
+  font-size: 45px;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  padding-top: 10px;
+}
+.navbar-menu a{
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  display: inline-block;
+}
+.navbar-menu a:hover{
+  color: #d49c00;
+  font-weight: 700;
+}
+#home{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+#home .content{
+  color: #fff;
+  padding-left: 40px;
+  text-align: left;
+  width: 600px;
+}
+.content h1{
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  font-family: 'Raleway',sans-serif;
+}
+.content p{
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: 'Raleway',sans-serif;
+}
+.content button{
+  padding: 15px 25px;
+  margin-top: 20px;
+  background: #d49c00;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: 'Raleway',sans-serif;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+#home .content button:hover{
+  background-color: #fff;
+  color: #000;
+  font-weight: 900;
+}
+.social-container{
+  position: absolute;
+  right: 40px;
+  bottom: 30%;
+}
+.social-icons{
+  list-style: none;
+}
+.social-icons li{
+  margin: 35px 0;
+}
+.social-icons li i{
+  color: #fff;
+  font-size: 20px;
+}
+.social-icons li a:hover i{
+transform: scale(1.5);
+color: #d49c00;
+transition: all .2s ease-in-out;
+}
